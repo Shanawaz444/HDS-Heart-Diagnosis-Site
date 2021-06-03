@@ -1,0 +1,186 @@
+.nav_bar_of_main_page
+{
+    display: flex;  
+    padding-top:10px;
+    font-family: "alata";
+    color: #ADEFD1;
+    background-color:#00203F;
+    padding-bottom: 10px;
+}
+.nav_bar_links{
+
+    display: flex;
+    margin-left: auto;
+    font-size: 20x;
+}
+.nav_bar_logo{
+    margin-left: 20px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size:25px;
+}
+.nav_bar_contactus{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.nav_bar_signin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav_bar_signup{
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+
+
+
+
+.main_page_about_section{
+
+    font-family: "alata";
+    color: #ADEFD1;
+    background-color:#00203F;
+    display: flex;
+}
+.about_the_page{
+
+    margin-left:60px;
+    margin-top: 40px;
+}
+.about_the_page_title{
+    font-size: 40px;
+    font-weight:400;
+}
+.about_the_page_title_fullform{
+
+    font-size:25px;
+    font-weight:400;
+}
+.about_the_page_intro{
+    margin-top: 15px;
+    font-size:18px;
+}
+.about_the_page_proceed_Button{
+    
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align:center;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #ADEFD1;
+    color: #00203F;
+    font-size:15px;
+    font-weight:500;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 2px;
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+}
+.about_the_page_proceed_Button:hover{
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+    border-style:solid;
+    border-color:black;
+}
+.about_the_page_proceed_Button_outer
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2px;
+    max-width:118px;
+    background-color: #ADEFD1;
+}
+
+
+
+
+
+
+.main_page_instructions{
+    background-color: #ADEFD1;
+    display:flex;
+    padding-bottom: 20px;
+
+}
+.main_page_instructions_section1{
+    margin-right: 50px;
+    margin-top: 60px;
+    margin-left: 70px;
+color: #00203F;
+font-family: "alata";
+
+}
+.main_page_instructions_section1_top{
+    
+    font-size: 22px;
+}
+
+
+.main_page_instructions_section1_middle_image
+{
+    margin-top:10px;
+    max-width: 400px;
+}
+
+
+
+
+
+
+.details_which_they_should_enter{
+
+    margin-left: auto;
+    margin-top: 100px;
+    margin-right:50px;
+    color: #ADEFD1;
+font-family: "alata";
+max-width: 700px;
+clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+
+
+}
+.test{
+    background-color: #00203F;
+    padding: 50px;
+}
+.details_which_they_should_enter_title{
+    font-size:30px;
+}
+.details_which_they_should_enter_subtitle{
+    font-size:20px;
+}
+.reports_values_tobe_entered{
+    margin-top: 10px;
+}
+.main_page_instructions_section1_bottom{
+    display: flex;
+}
+.detail_instruction_button_style{
+    text-align: center;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ADEFD1;
+    background-color:#00203F;
+    border-style: solid;
+    border-color: transparent;
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+}
+.detail_instruction_button{
+margin-top: 15px;
+margin-left:10px;
+}
+.detail_instruction_button_style:hover{
+    transition:.3s;
+    transition-timing-function: ease-in-out;
+    border-style:solid;
+    border-color:white;
+}
+.detail_instruction_button{
+    padding:2px;
+    background-color: #00203F;
+}
