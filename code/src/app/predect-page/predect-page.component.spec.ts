@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PredectPageComponent } from './predect-page.component';
 
+
 describe('PredectPageComponent', () => {
   let component: PredectPageComponent;
   let fixture: ComponentFixture<PredectPageComponent>;
