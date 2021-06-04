@@ -134,7 +134,7 @@ font-family: "alata";
 
     margin-left: auto;
     margin-top: 100px;
-    margin-right:50px;
+    
     color: #ADEFD1;
 font-family: "alata";
 max-width: 700px;
@@ -143,8 +143,14 @@ clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0
 
 }
 .test{
+    border-top: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: white;
     background-color: #00203F;
     padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-right:50px;
 }
 .details_which_they_should_enter_title{
     font-size:30px;
