@@ -1,0 +1,53 @@
+<div class="age">
+                    age:
+                </div>
+                <mat-slider class="age_slider"></mat-slider>
+                <div class="age">
+                    sex:(male or female)
+                </div>
+                <mat-slider class="sex_slider"></mat-slider>
+                <div class="chestpain">
+                    chest pain types: (1. typical angina, 2.atypical angina, 3.non-angina 4.asymptomatic angina )
+                </div>
+                <mat-slider class="chestpain_slider"></mat-slider>
+                <div class="restingbloodpressur">
+                    Resting blood pressure:
+                </div>
+                <mat-slider class="restingbloodpressur_slider"></mat-slider>
+                <div class="cholostrollevels">
+                    cholostrol levels:
+                </div>
+                <mat-slider class="cholostrollevels_slider"></mat-slider>
+                <div class="fastingbloodsugerlevels">
+                    fasting blood sugar levels if greater then 120 mg/dl or not
+                </div>
+                <mat-slider class="fastingbloodsugerlevels_slider"></mat-slider>
+                <div class="restECGresults">
+                    resting electrocardiographic ECG results
+                    (1.Normal 2.St-T wave abnormal 3.left ventr. hypertrophy)
+                </div>
+                <mat-slider class="restECGresults_slider"></mat-slider>
+                <div class="maxheartrateachived">
+                    maximum heart rate achieved
+                </div>
+                <mat-slider class="maxheartrateachived_slider"></mat-slider>
+                <div class="exerciceinducedagena">
+                    Exercise induced agena(i.e yes or no)
+                </div>
+                <mat-slider class="exerciceinducedagena_slider"></mat-slider>
+                <div class="stdepression">
+                    ST depression induced by exercise
+                </div>
+                <mat-slider class="stdepression_slider"></mat-slider>
+                <div class="slopofpeak">
+                    slope of the peak exercise ST segment
+                </div>
+                <mat-slider class="slopofpeak_slider"></mat-slider>
+                <div class="cs">
+                    number of major vessels (0-3) colored by flourosopy
+                </div>
+                <mat-slider class="cs_slider" [color]="sol"></mat-slider>
+                <div class="Thalassemia">
+                    Thalassemia (thal-uh-SEE-me-uh) present in the body (1.normal, 2.fixed defect, 3.reversable defect)
+                </div>
+                <mat-slider class="Thalassemia_slider"></mat-slider>
