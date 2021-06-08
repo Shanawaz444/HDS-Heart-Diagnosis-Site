@@ -114,7 +114,7 @@ for i in ['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','
         val=int(input())
         temp[i]=[val]
     if(i=='thal'):
-        print("enter the values 3 if normal, 6 if fixed defect, 7 if reversable defect")    
+        print("enter the values 1 if normal, 2 if fixed defect, 3 if reversable defect")    
         val=int(input())
         temp[i]=[val]
         continue    
