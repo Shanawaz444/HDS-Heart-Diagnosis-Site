@@ -11,13 +11,13 @@
 
     display: flex;
     margin-left: auto;
-    font-size: 20x;
+    font-size: 13px;
 }
 .nav_bar_logo{
     margin-left: 20px;
     margin-right: 10px;
     font-weight: 600;
-    font-size:25px;
+    font-size:20px;
 }
 .nav_bar_contactus{
     margin-left: 10px;

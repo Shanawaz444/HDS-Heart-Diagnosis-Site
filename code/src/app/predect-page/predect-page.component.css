@@ -1,1 +1,126 @@
+    .predict_page_nav
+    {
+        padding:20px;
+        display: flex;
+        background-color: #11487D;
+    }
+    .predict_page_nav_title
+    {
+        font-weight: 600;
+        color: #ADEFD1;
+        font-family: "alata";
+    }
+    .predict_page_nav_options
+    {
+        margin-left: auto;
+        display: flex;
+        color: #ADEFD1;
+        font-family: "alata";
+        margin-right: 20px;
+        font-size:15px
+    }
+    .contact_us{
+        margin-left:20px;
+    }
+    .logout{
+        margin-left:20px;
+    }
+    .bottom_blob1
+    {
+        position:fixed;
+        bottom: 0;
+        left: 0;
+     
+    }
+
+
+
+
+
+
+
+
+
+
+    .predect_main_content{
+        display: flex;
+        padding-top: 100px;
+        background-color: #11487D;
+        
+        
+    }
+    .predect_main_content_box
+    {box-shadow: rgba(0, 0, 0, 0.568) 0px 5px 15px;
+        z-index: 1;
+        margin-left:auto;
+        background-color: #00203F;
+    }
+    .model_section{
+        display: flex;
+       
+        background-color: #00203F;
+    }
+    .inputstomodel{
+        margin-left:40px;
+        margin-top: 40px;
+        border-style: solid;
+        border-color: white;
+        border-width:2px;
+        border-right: 0px;
+        border-top: 0px;
+        margin-bottom: 20px;
+    }
+    .predect_main_content_title{
+        margin-top: 40px;
+        text-align: center;
+        font-family: "alata";
+    color: #ADEFD1;
+    font-size:25px;
+    }
+    .inputstomodel{
+        font-family: "alata";
+    color: #ADEFD1;
+    font-size:18px;
+    max-width:600px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    }
+    .modelimage{
+        margin-top: 100px;
+        margin-right: 50px;
+    }
+    .modelimage_style
+    {
+        height:300px;
+    }
+    .model_message
+    {
+        text-align: center;
+        margin-top: 40px;
+        font-family: "alata";
+    color: #ADEFD1;
+    font-size:18px;     
+    }
+    .predect_button{
+        margin-top: 40px;
+        text-align: center;
+        
+    }
+    .predect_button_style
+    {
+        font-family: "alata";
+    color: #00203F;
+    background-color: #ADEFD1;
+    font-size:15px;    
+    border-style: none;
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    .predect_button_style:hover{
+        box-shadow: rgba(233, 233, 233, 0.35) 0px 5px 15px;
+    }
+    .matStepLabel_style{
+        color: #ADEFD1;
+    }
     
