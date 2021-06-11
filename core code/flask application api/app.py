@@ -1,5 +1,7 @@
 #inmporting all the essential libraries
-
+from flask import Flask
+from flask_restful import Resource,Api
+from flask_cors import CORS
 import numpy as np      # the numpy library is for numpy arrays
 import pandas as pd     # pandas is for preprossing the CSV files and converting into dataframes
 import matplotlib.pyplot as plt  # matplotlib is for visualising the data
@@ -10,6 +12,15 @@ print(os.listdir())
 
 import warnings
 warnings.filterwarnings('ignore')
+import json
+
+
+
+
+app = Flask(__name__)
+CORS(app)
+api=Api(app)
+
 
 
 dataset = pd.read_csv("heart.csv") # importing the dataset heart.csv
@@ -34,7 +45,63 @@ score_lr = round(accuracy_score(Y_pred_lr,Y_test)*100,2)
 
 print("The accuracy score achieved using Logistic Regression is: "+str(score_lr)+" %")
 
-print("lets diagonos the disease")
+
+
+
+
+
+class Predict(Resource):
+    def get(self):
+        return "hello!!!"
+
+class PredictOutput(Resource):
+    def get(self,age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal):
+        temp={'age':[age],'sex':[sex],'cp':[cp],'trestbps':[trestbps],'chol':[chol],'fbs':[fbs],'restecg':[restecg],'thalach':[thalach],'exang':[exang],'oldpeak':[oldpeak],'slope':[slope],'ca':[ca],'thal':[thal]}
+        print(temp)
+        ans = pd.DataFrame(data=temp)
+        clasify=lr.predict(ans)
+        print(clasify)
+        return str(clasify)
+
+api.add_resource(Predict,'/predict')
+api.add_resource(PredictOutput,'/predictoutput/<int:age>,<int:sex>,<int:cp>,<int:trestbps>,<int:chol>,<int:fbs>,<int:restecg>,<int:thalach>,<int:exang>,<int:oldpeak>,<int:slope>,<int:ca>,<int:thal>')
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""print("lets diagonos the disease")
 print("enter the values of :")
 temp={'age':[70],'sex':[1],'cp':[0],'trestbps':[145],'chol':[174],'fbs':[0],'restecg':[1],'thalach':[125],'exang':[1],'oldpeak':[2.6],'slope':[0],'ca':[0],'thal':[3]}
 #print(temp)
@@ -132,5 +199,5 @@ if(clasify==1):
 else:
     print("YOUR HEART IS NORMAL")
 
-print("THANKS FOR USING OUR SERVICES.")        
+print("THANKS FOR USING OUR SERVICES.")  """      
 
