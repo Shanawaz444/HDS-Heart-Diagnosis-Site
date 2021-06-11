@@ -9,6 +9,8 @@ import { PredectPageComponent } from './predect-page/predect-page.component';
 import { FormsModule } from '@angular/forms';
 import { PredectPageDialogComponent } from './predect-page-dialog/predect-page-dialog.component';
 import {DataService} from './user_inputs/user_data_for_predection.service'
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -25,6 +27,7 @@ import {DataService} from './user_inputs/user_data_for_predection.service'
     BrowserAnimationsModule,
     MyMaterialModule,
     FormsModule,
+    HttpClientModule
   
   
   ],
