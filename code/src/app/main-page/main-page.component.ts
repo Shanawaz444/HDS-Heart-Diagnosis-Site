@@ -16,7 +16,14 @@ export class MainPageComponent implements OnInit {
   proceedfun()
   {
     //this.verify="proceeding"
-    this.router.navigate(['predect-page'])
+    this.router.navigate(['predect-page'],{replaceUrl:true})
   }
-
+  registerrouting()
+  {
+    this.router.navigate(['register-page'])
+  }
+  loginrouting()
+  {
+    this.router.navigate(['login-page'])
+  }
 }
