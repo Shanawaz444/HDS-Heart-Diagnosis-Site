@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { PredectPageDialogComponent } from './predect-page-dialog/predect-page-dialog.component';
 import {DataService} from './user_inputs/user_data_for_predection.service'
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterPageComponent } from './register-page/register-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     PredectPageComponent,
-    PredectPageDialogComponent
+    PredectPageDialogComponent,
+    RegisterPageComponent,
+    LoginPageComponent
     
     
   ],
