@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import {MatDialog} from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { PredectPageDialogComponent } from '../predect-page-dialog/predect-page-dialog.component';
 import {DataService} from '../user_inputs/user_data_for_predection.service'
+
 @Component({
   selector: 'app-predect-page',
   templateUrl: './predect-page.component.html',
@@ -25,6 +27,11 @@ fastingbloodsuger=1;
 
 
 bloodpresure=100;
+
+cholostrollevels=0;
+
+
+
 recg=0;
 recgarray:string[]=["Normal",
 "St-T wave abnormal",
@@ -48,7 +55,7 @@ majorvesselscolored=0;
 Thalassemia=0;
 Thalassemiaarray:string[]=["Normal","Fixed defect","Reversable defect"];
 dataserviceobject;
-constructor(public dialog: MatDialog,_dataserviceobject:DataService) {
+constructor(public dialog: MatDialog,_dataserviceobject:DataService,private router: Router) {
   this.dataserviceobject=_dataserviceobject;
 }
 
@@ -68,11 +75,16 @@ constructor(public dialog: MatDialog,_dataserviceobject:DataService) {
     this.dataserviceobject.setdata('slopest',this.slopeofthepeakexerciseSTsegment)
     this.dataserviceobject.setdata('majorvesselscolored',this.majorvesselscolored)
     this.dataserviceobject.setdata('Thalassemia',this.Thalassemia)
+    this.dataserviceobject.setdata('cholostrollevels',this.cholostrollevels);
     const dialogRef = this.dialog.open(PredectPageDialogComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
+  }
+
+  logout(){
+    this.router.navigate(['main-page'],{replaceUrl:true})
   }
 }
 
