@@ -12,8 +12,8 @@ import {DataService} from './user_inputs/user_data_for_predection.service'
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-
-
+import {StateChange} from './global_decisions/global_states_control.service';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,9 @@ import { LoginPageComponent } from './login-page/login-page.component';
     PredectPageComponent,
     PredectPageDialogComponent,
     RegisterPageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    MainPageComponent
+ 
     
     
   ],
@@ -31,12 +33,12 @@ import { LoginPageComponent } from './login-page/login-page.component';
     BrowserAnimationsModule,
     MyMaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   
   
   ],
  
-  providers: [DataService],
+  providers: [DataService,StateChange],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
